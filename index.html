@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information System</title>
+    <link rel="stylesheet" type="text/css" href="styles_home.css">
+    <script>
+        function checkAccess() {
+            const password = "37182804981098"; // Updated password
+            const userInput = prompt("Please enter the password to access the Student Information System:");
+            if (userInput !== password) {
+                alert("Access denied! Redirecting to the login page.");
+                window.location.href = "login.html"; // Redirect to a login page or error page
+            } else {
+                alert("Access granted! Welcome.");
+            }
+        }
+    </script>
+</head>
+<body onload="checkAccess()">
+    <header>
+        <h1>Welcome to the Student Information System</h1>
+    </header>
+    <main>
+        <h2>Student Details</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Admission Number</th>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Aesthetic Subject</th>
+                    <th>Leadership</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example rows, replace with real data -->
+                <tr>
+                    <td>001</td>
+                    <td>John Doe</td>
+                    <td>1234567890</td>
+                    <td>Music</td>
+                    <td>Team Leader</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Jane Smith</td>
+                    <td>9876543210</td>
+                    <td>Art</td>
+                    <td>Class Monitor</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2025 Student Information System</p>
+    </footer>
+</body>
+</html>
