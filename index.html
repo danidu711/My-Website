@@ -10,8 +10,8 @@
             const password = "37182804981098"; // Updated password
             const userInput = prompt("Please enter the password to access the Student Information System:");
             if (userInput !== password) {
-                alert("Access denied! Redirecting to the login page.");
-                window.location.href = "login.html"; // Redirect to a login page or error page
+                alert("Access denied!");
+                document.body.innerHTML = ""; // Clear the page content if the password is incorrect
             } else {
                 alert("Access granted! Welcome.");
             }
@@ -35,7 +35,7 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Example rows, replace with real data -->
+                <!-- Replace these rows with real data -->
                 <tr>
                     <td>001</td>
                     <td>John Doe</td>
